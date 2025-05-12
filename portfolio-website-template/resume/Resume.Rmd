@@ -1,0 +1,93 @@
+---
+name: Andrea
+surname: Aceves
+position: "Membership Specialist"
+phone: "+1 (909) 242-5370"
+email: "adrea9x81@gmail.com"
+linkedin: "www.linkedin.com/in/andrea-aceves-309929222"
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::latexcv:
+    theme: classic
+header-includes:
+  - \usepackage{enumitem}
+  - \setlist[itemize]{nosep, left=0pt}
+  - \setlist[enumerate]{nosep, left=0pt}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+if (!requireNamespace(c("tinytex","vitae","tibble"), quietly = TRUE)) {
+  install.packages(c("tinytex","vitae","tibble"))
+}
+
+if (Sys.which("pdflatex") == "" && !tinytex::is_tinytex()) {                    
+  message("► TinyTeX not found – installing")
+  tinytex::install_tinytex()        
+} else {
+  message("✓ LaTeX present – no installation needed.")
+}
+
+library(vitae)
+library(tibble)
+```
+
+# Professional Summary
+
+Motivated and detail-oriented marketing and analytics professional with a strong background in data interpretation, campaign strategy, and digital tools. Skilled in turning insights into action and communicating value across business teams.
+
+# Technical Skills
+
+- **Programming Languages:** R, Python, SQL  
+- **Web Technologies:** HTML, CSS/SCSS, Quarto, CMS, Google Analytics
+
+# Education
+
+```{r}
+tribble(
+  ~ Degree, ~ Year, ~ College, ~ Institution,
+  "Master of Science in Digital Marketing", "2023 – Expected Graduation 2025", "College of Business", "Cal Poly Pomona",
+  "Bachelor of Science in Public Relations", "2018 – 2022", "College of Letters, Arts, and Social Sciences", "Cal Poly Pomona"
+) %>%
+  detailed_entries(Degree, Year, College, Institution)
+```
+
+# Work Experience
+
+```{r}
+tribble(
+  ~ Years, ~ Company, ~ Duties, ~ Title,
+
+  "Jul 2023 – Present", "Girl Scouts of Greater Los Angeles",
+  list(
+    "Lead membership growth and retention strategies across regional areas.",
+    "Facilitate volunteer onboarding, conflict resolution, and leader training.",
+    "Organize community events and service area meetings.",
+    "Utilize Salesforce CRM and analytics dashboards to track engagement."
+  ),
+  "Membership Specialist",
+
+  "Apr 2024 – Jul 2024", "Amazon",
+  list(
+    "Supervised warehouse operations, including labor planning and safety protocols.",
+    "Managed staffing levels to ensure fulfillment targets were met.",
+    "Monitored KPIs and led continuous improvement initiatives."
+  ),
+  "Area Manager",
+
+  "Jun 2021 – Jan 2023", "Best Buy",
+  list(
+    "Managed inventory and led store teams during peak retail hours.",
+    "Trained employees on customer service and merchandising standards.",
+    "Assisted with promotional campaigns and operations."
+  ),
+  "Shift Lead"
+
+) %>%
+  detailed_entries(
+    what = Title,
+    when = Years,
+    with = Company,
+    why = Duties
+  )

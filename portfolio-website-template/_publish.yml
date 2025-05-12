@@ -1,0 +1,7 @@
+- source: project
+  quarto-pub:
+    - id: 2403d6c7-f34d-48cf-ad3f-719895c72783
+      url: 'https://acevesam.quarto.pub/your-name'
+  netlify:
+    - id: 6644c65f-b3ff-437f-bb1d-967e3e69e744
+      url: 'https://superb-wisp-257b85.netlify.app'

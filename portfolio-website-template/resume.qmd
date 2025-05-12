@@ -1,0 +1,63 @@
+---
+title: "Résumé"
+---
+
+```{r knit-resume, echo=FALSE, message=FALSE}
+rmarkdown::render(
+  "resume/Resume.Rmd",
+  output_format = "pdf_document",
+  output_file   = "Resume.pdf",
+  output_dir    = "resume",
+  quiet         = TRUE
+)
+```
+
+You can view a PDF version of my resume [here](Resume.pdf).
+
+## Professional Summary
+
+Number-driven Membership Specialist at Girl Scouts of Greater Los Angeles, with expertise in retention strategies, community outreach, volunteer training, and data-informed decision-making.
+
+## Technical Skills
+
+- **Programming Languages:** R, Microsoft Office  
+- **Web Technologies:** HTML, JavaScript, Quarto, Google Analytics
+
+## Education
+
+| Degree                 | Year                | College / Department                         | Institution         |
+|------------------------|---------------------|-----------------------------------------------|---------------------|
+| M.S. Digital Marketing | 2023 – Expected 2025| College of Business                           | Cal Poly Pomona     |
+| B.S. Public Relations  | 2018 – 2022         | College of Letters, Arts & Social Sciences    | Cal Poly Pomona     |
+
+## Work Experience
+
+### Membership Specialist, Girl Scouts of Greater Los Angeles  
+*Jul 2023 – Present*
+
+- Lead membership retention and volunteer engagement strategies across multiple communities  
+- Onboard and train new troop leaders, resolving conflicts and ensuring policy alignment  
+- Coordinate area events and lead monthly service unit meetings  
+- Analyze participation data using Salesforce CRM and internal dashboards
+
+---
+
+### Area Manager, Amazon  
+*Apr 2024 – Jul 2024*
+
+- Supervised warehouse operations including labor allocation and productivity metrics  
+- Maintained safety standards and ensured fulfillment KPIs were met  
+- Managed cross-functional communication between departments and frontline staff  
+- Applied Lean principles to streamline workflows and reduce delay
+
+---
+
+### Shift Lead, Best Buy  
+*Jun 2021 – Jan 2023*
+
+- Directed team operations during high-traffic hours, ensuring sales and service standards  
+- Mentored employees and supported onboarding of seasonal staff  
+- Coordinated inventory audits and assisted with merchandising plans  
+- Supported local outreach events and customer experience campaigns
+
+

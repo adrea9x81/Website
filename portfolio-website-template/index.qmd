@@ -1,0 +1,25 @@
+---
+title: "Hi, I'm Andrea Aceves"
+---
+
+::::: columns
+::: {.column width="30%"}
+![](C:/Users/adrea/OneDrive/Desktop/M10/portfolio-website-template/IMG_3347.JPG){width="100%" style="border-radius: 50%;"}
+:::
+
+::: {.column width="70%" style="padding-left: 3rem;"}
+I'm a Andrea. I specialize in transforming complex information into clear, engaging, and actionable insights.
+:::
+:::::
+
+## About Me
+
+I hold a Masters in Digital Marketing from Cal Poly Pomona.
+
+## Let's Connect
+
+You can [email me](adrea9x81@gmail.com) or connect on [LinkedIn](www.linkedin.com/in/andrea-aceves-309929222).
+
+------------------------------------------------------------------------
+
+*Welcome to my portfolio.*

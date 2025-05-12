@@ -1,0 +1,15 @@
+{
+  "hash": "3c9d2a9008a72b954ee67231ab832dc4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nname: Andrea\nsurname: Aceves\nposition: \"Membership Specialist\"\nphone: \"+1 (909) 242-5370\"\nemail: \"adrea9x81@gmail.com\"\nlinkedin: \"www.linkedin.com/in/andrea-aceves-309929222\"\ndate: \"May 2025\"\noutput: \n  vitae::latexcv:\n    theme: classic\nheader-includes:\n  - \\usepackage{enumitem}\n  - \\setlist[itemize]{nosep, left=0pt}\n  - \\setlist[enumerate]{nosep, left=0pt}\n---\n\n\n\n\n\n# Professional Summary\n\nMotivated and detail-oriented marketing and analytics professional with a strong background in data interpretation, campaign strategy, and digital tools. Skilled in turning insights into action and communicating value across business teams.\n\n# Technical Skills\n\n- **Programming Languages:** R, Python, SQL  \n- **Web Technologies:** HTML, CSS/SCSS, Quarto, CMS, Google Analytics\n\n# Education\n\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n# A tibble: 2 × 5\n  what                                    when                 with  where why  \n  <chr>                                   <chr>                <chr> <chr> <lis>\n1 Master of Science in Digital Marketing  2023 – Expected Gra… Coll… Cal … <chr>\n2 Bachelor of Science in Public Relations 2018 – 2022          Coll… Cal … <chr>\n```\n\n\n:::\n:::\n\n\n\n# Work Experience\n\n\ntribble(\n  ~ Years, ~ Company, ~ Duties, ~ Title,\n\n  \"Jul 2023 – Present\", \"Girl Scouts of Greater Los Angeles\",\n  list(\n    \"Lead membership growth and retention strategies across regional areas.\",\n    \"Facilitate volunteer onboarding, conflict resolution, and leader training.\",\n    \"Organize community events and service area meetings.\",\n    \"Utilize Salesforce CRM and analytics dashboards to track engagement.\"\n  ),\n  \"Membership Specialist\",\n\n  \"Apr 2024 – Jul 2024\", \"Amazon\",\n  list(\n    \"Supervised warehouse operations, including labor planning and safety protocols.\",\n    \"Managed staffing levels to ensure fulfillment targets were met.\",\n    \"Monitored KPIs and led continuous improvement initiatives.\"\n  ),\n  \"Area Manager\",\n\n  \"Jun 2021 – Jan 2023\", \"Best Buy\",\n  list(\n    \"Managed inventory and led store teams during peak retail hours.\",\n    \"Trained employees on customer service and merchandising standards.\",\n    \"Assisted with promotional campaigns and operations.\"\n  ),\n  \"Shift Lead\"\n\n) %>%\n  detailed_entries(\n    what = Title,\n    when = Years,\n    with = Company,\n    why = Duties\n  )\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
